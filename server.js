@@ -14,7 +14,7 @@ let app = express();
 const OKTA_ISSUER_URI = "https://dev-yxx1nt2rb8bx8z80.us.auth0.com/"
 const OKTA_CLIENT_ID = "RlWaVIY8PGZRTPZ2yg9HrzpW1pXQG2jJ";
 const OKTA_CLIENT_SECRET = "0oO3cZ4179KhwljDyWebXu3nquQR34DRJpqtKxH8-vXPf33ewGdDzEtXvRqn1J_7";
-const REDIRECT_URI = "http://localhost:3000/dashboard";
+const REDIRECT_URI = "https://copiar-contenido-a-su-folter.vercel.app/callback";
 const PORT = process.env.PORT || "3000";
 const SECRET = "hjsadfghjakshdfg87sd8f76s8d7f68s7f632342ug44gg423636346f"; // Dejar el secret así como está.
 
@@ -23,7 +23,7 @@ const config = {
   authRequired: false,
   auth0Logout: true,
   secret: SECRET,
-  baseURL: 'http://localhost:3000',
+  baseURL: 'https://copiar-contenido-a-su-folter.vercel.app',
   clientID: 'RlWaVIY8PGZRTPZ2yg9HrzpW1pXQG2jJ',
   issuerBaseURL: 'https://dev-yxx1nt2rb8bx8z80.us.auth0.com'
 };
